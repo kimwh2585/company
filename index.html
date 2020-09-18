@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <!-- 유용한 링크 -->
+    <!-- cdnsj : https://cdnjs.com/ -->
+    <!-- 폰트어썸 아이콘 리스트 : https://fontawesome.com/icons?d=gallery&m=free -->
+
+    <!-- 구글 폰트 불러오기 -->
+    <!-- rotobo(400/900), notosanskr(400/900) -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;900&family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+
+    <!-- 폰트어썸 불러오기 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+
+    <!-- 제이쿼리 불러오기 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+    <!-- owl 캐러셀 불러오기 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.min.css">
+
+
+    <!-- slidk 불러오기 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+    
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+
+    <div class="header con">
+        <div class="top-bar flex flex-jc-sb flex-ai-c">
+            <div class="icon-box">
+                <ul class="flex">
+                    <li><a href="#">
+                            <img src="https://www.keit.re.kr/image/renewal/ico_sns_facebook2.png" alt="">
+                        </a></li>
+                    <li><a href="#">
+                            <img src="https://www.keit.re.kr/image/renewal/ico_sns_youtube2.png" alt="">
+                        </a></li>
+                    <li><a href="#">
+                            <img src="https://www.keit.re.kr/image/renewal/ico_sns_itech2.png" alt="">
+                        </a></li>
+                    <li><a href="#">
+                            <img src="https://www.keit.re.kr/image/renewal/ico_sns_blog2.png" alt="">
+                        </a></li>
+                </ul>
+            </div>
+            <div class="login-box flex">
+                <ul class="flex">
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#">회원가입</a></li>
+                    <li><a href="#">ENG</a></li>
+                    <li><a href="#">-</a></li>
+                    <li><a href="#">+</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="top-menu-bar flex flex-jc-sb flex-ai-c">
+            <a href="#" class="logo">
+                <img src="https://www.keit.re.kr/image/renewal/sub/sb_logo.gif" alt="">
+            </a>
+            <div class="top-menu-box flex">
+                <ul class="flex">
+                    <li><a href="#">KEIT는</a></li>
+                    <li><a href="#">홍보·소식</a></li>
+                    <li><a href="#">공지·공시</a></li>
+                    <li><a href="#">윤리경영</a></li>
+                    <li><a href="#">정보공개</a></li>
+                    <li><a href="#">고객소통</a></li>
+                </ul>
+            </div>
+            <div class="ham">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="slider-p con" data-slider-p-animate-duration="3000">
+        <div class="nav-box flex flex-ai-c">
+            <div class="control-box">
+                <i class="fas fa-arrow-left left"></i>
+                <i class="fas fa-pause pause"></i>
+                <i class="fas fa-arrow-right right"></i>
+            </div>
+            <div class="flex">
+                <div class="progress-bar">
+                    <div class="stick"></div>
+                </div>
+                <div class="index-box flex flex-ai-c">
+                    <div></div>
+                    /
+                    <div></div>
+                </div>
+            </div>
+        </div>
+        <div class="slides">
+            <div style="background-image:url(https://www.keit.re.kr/image/renewal/main/mvisual_img01.jpg)">
+                <div class="txt-box con">
+                    KEIT는투명하고 전문적인<br>
+                    산업기술·기획 평가·관리를 수행하고 있습니다.
+                </div>
+            </div>
+            <div style="background-image:url(https://www.keit.re.kr/image/renewal/main/mvisual_img02.jpg)">
+                <div class="txt-box con">
+                    지역과 공감하고, 지역과 상생하는<br>
+                    KEIT가 되겠습니다.
+                </div>
+            </div>
+            <div style="background-image:url(https://www.keit.re.kr/image/renewal/main/mvisual_img03.jpg)">
+                <div class="txt-box con">
+                    국민을 위한 따뜻한 기술개발로<br>
+                    국민행복을 만들어 갑니다.
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content con row">
+        <div class="side-bar cell">
+            <div class="company flex flex-ai-c flex-jc-sb">
+                <ul class="row">
+                    <li class="cell"><a href="#">
+                            <img src="https://www.keit.re.kr/image/renewal/main/main_site01.png" alt="">
+                        </a></li>
+                    <li class="cell"><a href="#">
+                            <img src="https://www.keit.re.kr/image/renewal/main/main_site02.png" alt="">
+                        </a></li>
+                    <li class="cell"><a href="#">
+                            <img src="https://www.keit.re.kr/image/renewal/main/main_site03.png" alt="">
+                        </a></li>
+                </ul>
+            </div>
+            <div class="util cell">
+                <ul class="row">
+                    <li class="cell">
+                        <a href="#" class="block relative">
+                            <span class="img" style="background-image:url(https://www.keit.re.kr/image/renewal/main/main_ico1.png);"></span>
+
+                            <span class="title-box">
+                                <span class="title">
+                                    사업공고
+                                </span>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="cell">
+                        <a href="#" class="block relative">
+                            <span class="img" style="background-image:url(https://www.keit.re.kr/image/renewal/main/main_ico2.png);"></span>
+
+                            <span class="title-box">
+                                <span class="title">
+                                    R&D성과
+                                </span>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="cell">
+                        <a href="#" class="block relative">
+                            <span class="img" style="background-image:url(https://www.keit.re.kr/image/renewal/main/main_ico3.png);"></span>
+                            <span class="title-box">
+                                <span class="title">
+                                    법령및규정<br>
+                                </span>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="cell">
+                        <a href="#" class="block relative">
+                            <span class="img" style="background-image:url(https://www.keit.re.kr/image/renewal/main/main_ico4.png);"></span>
+
+                            <span class="title-box">
+                                <span class="title">
+                                    경영공시
+                                </span>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="cell">
+                        <a href="#" class="block relative">
+                            <span class="img" style="background-image:url(https://www.keit.re.kr/image/renewal/main/main_ico5.png);"></span>
+                            <span class="title-box">
+                                <span class="title">
+                                    채용공고
+                                </span>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="cell">
+                        <a href="#" class="block relative">
+                            <span class="img" style="background-image:url(https://www.keit.re.kr/image/renewal/main/main_ico6.png);"></span>
+                            <span class="title-box">
+                                <span class="title">
+                                    직원검색
+                                </span>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="cell">
+                        <a href="#" class="block relative">
+                            <span class="img" style="background-image:url(https://www.keit.re.kr/image/renewal/main/main_ico7.png);"></span>
+                            <span class="title-box">
+                                <span class="title">
+                                    고객제안
+                                </span>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="notice cell">
+                <div class="view-plus">+</div>
+                <ul class="row">
+                    <li class="cell active" data-tab-name="box-1" data-tab-head-item-name="1"><a>공지사항</a></li>
+                    <li class="cell" data-tab-name="box-1" data-tab-head-item-name="2"><a>보도자료</a></li>
+                    <li class="cell" data-tab-name="box-1" data-tab-head-item-name="3"><a>뉴스클리핑</a></li>
+                    <li class="cell" data-tab-name="box-1" data-tab-head-item-name="4"><a>유관기관소식</a></li>
+                </ul>
+                <div class="body">
+                    <ul>
+                        <li class="active row" data-tab-name="box-1" data-tab-body-item-name="1">
+                            <span class="cell strong">행사·안내</span>
+                            <a href="#" class="cell">로봇분야 대국민 아이디어 공모전 공고</a>
+                            2020-09-14
+                        </li>
+                        <li class="active row" data-tab-name="box-1" data-tab-body-item-name="1">
+                            <span class="cell strong">채용</span>
+                            <a href="#" class="cell">2020년도 한국산업기술평가관리원 NCS기반 신입...</a>
+                            2020-09-14
+                        </li>
+                        <li class="active row" data-tab-name="box-1" data-tab-body-item-name="1">
+                            <span class="cell strong">행사·안내</span>
+                            <a href="#" class="cell">로봇분야 대국민 아이디어 공모전 공고</a>
+                            2020-09-14
+                        </li>
+                        <li class="active row" data-tab-name="box-1" data-tab-body-item-name="1">
+                            <span class="cell strong">행사·안내</span>
+                            <a href="#" class="cell">로봇분야 대국민 아이디어 공모전 공고</a>
+                            2020-09-14
+                        </li>
+                        <li class="active row" data-tab-name="box-1" data-tab-body-item-name="1">
+                            <span class="cell strong">행사·안내</span>
+                            <a href="#" class="cell">로봇분야 대국민 아이디어 공모전 공고</a>
+                            2020-09-14
+                        </li>
+                        <li class="active row" data-tab-name="box-1" data-tab-body-item-name="2">
+                            <span class="cell strong">행사·안내</span>
+                            <a href="#" class="cell">로봇분야 대국민 아이디어 공모전 공고</a>
+                            2020-09-14
+                        </li>
+                        <li data-tab-name="box-1" data-tab-body-item-name="3">입찰공고2 내용</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="operation cell-right">
+                <h3>윤리경영</h3>
+                <div class="head">
+                    <p>청렴을 선도하는 <br>
+                        R&D지원기관,KEIT
+                    </p>
+                </div>
+                <div class="body">
+                    <ul>
+                        <li><a href="#"><i class="far fa-lightbulb"></i>추진방향<i class="fas fa-angle-right cell-right"></i></a></li>
+                        <li><a href="#"><i class="far fa-flag"></i>윤리선언<i class="fas fa-angle-right cell-right"></i></a></li>
+                        <li><a href="#"><i class="fas fa-thermometer-three-quarters"></i>인권경영<i class="fas fa-angle-right cell-right"></i></a></li>
+                        <li><a href="#"><i class="fas fa-gift"></i>사회공헌<i class="fas fa-angle-right cell-right"></i></a></li>
+                        <li><a href="#"><i class="fab fa-sketch"></i>청렴활동<i class="fas fa-angle-right cell-right"></i></a></li>
+                        <li><a href="#"><i class="fas fa-briefcase"></i>청렴도 및 부패방지 시책평가<i class="fas fa-angle-right cell-right"></i></a></li>
+                        <li><a href="#"><i class="fas fa-desktop"></i>대내외 감사 결과<i class="fas fa-angle-right cell-right"></i></a></li>
+                        <li><a href="#"><i class="fas fa-mouse"></i>원클릭 신고<br>(연구비 비리, R&amp;D브로커 등)<i class="fas fa-angle-right cell-right"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="photo cell relative">
+                <div class="view-plus">+</div>
+                <p>포토소식</p>
+                <a href="#">
+                    <img src="https://www.keit.re.kr/articleDownLoad.do?mode=BBS&fileIdx=118507" alt="">
+                </a>
+                <div class="text-box">
+                    <span>[200904] KEIT-llTP 업무협약..</span>
+                </div>
+            </div>
+            <div class="sns cell relative">
+                <div class="view-plus">+</div>
+                <p>SNS</p>
+                <ul class="row">
+                    <li class="cell"><a href="#">
+                            <img src="https://www.keit.re.kr/image/renewal/main/youtube.png" alt="">
+                        </a></li>
+                    <li class="cell"><a href="#">
+                            <img src="https://www.keit.re.kr/image/renewal/main/sns_fb.png" alt="">
+                        </a></li>
+                    <li class="cell"><a href="#">
+                            <img src="https://www.keit.re.kr/image/renewal/main/sns_bl.png" alt="">
+                        </a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="news-bar cell-right">
+            <div class="slider-wrap">
+                <h3>주요소식</h3>
+                <div class="my-slider-1">
+                    <div class="owl-carousel owl-theme">
+                        <div class="item">
+                            <img src="https://www.keit.re.kr/articleDownLoad.do?mode=BANNER&fileIdx=9" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="https://www.keit.re.kr/articleDownLoad.do?mode=BANNER&fileIdx=10" alt="">
+
+                        </div>
+                        <div class="item">
+                            <img src="https://www.keit.re.kr/articleDownLoad.do?mode=BANNER&fileIdx=13" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-wrap">
+                <h3>내부소식</h3>
+                <div class="my-slider-1">
+                    <div class="owl-carousel owl-theme">
+                        <div class="item">
+                            <img src="https://www.keit.re.kr/articleDownLoad.do?mode=BANNER&fileIdx=12" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="https://www.keit.re.kr/articleDownLoad.do?mode=BANNER&fileIdx=13" alt="">
+
+                        </div>
+                        <div class="item">
+                            <img src="https://www.keit.re.kr/articleDownLoad.do?mode=BANNER&fileIdx=14" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-wrap">
+                <h3>외부소식</h3>
+                <div class="my-slider-1">
+                    <div class="owl-carousel owl-theme">
+                        <div class="item">
+                            <img src="https://www.keit.re.kr/articleDownLoad.do?mode=BANNER&fileIdx=15" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="https://www.keit.re.kr/articleDownLoad.do?mode=BANNER&fileIdx=16" alt="">
+
+                        </div>
+                        <div class="item">
+                            <img src="https://www.keit.re.kr/articleDownLoad.do?mode=BANNER&fileIdx=17" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <ul class="go-box">
+                <li class="row">
+                    <a href="#" class="cell">PD이슈리포트</a>
+                    <span class="cell-right go-1">Go</span>
+                </li>
+                <li class="row">
+                    <a href="#" class="cell">R&D교육센터</a>
+                    <span class="cell-right go-2">Go</span>
+                </li>
+                <li class="row">
+                    <a href="#" class="cell">이달의 신기술 구독안내</a>
+                    <span class="cell-right go-3">Go</span>
+                </li>
+                <li class="row">
+                    <a href="#" class="cell ">찾아오시는 길</a>
+                    <span class="cell-right go-4">Go</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer-slider-1">
+        <div class="con">
+            <div class="slider-box-1">
+                <div class="slider">
+                    <div>
+                        <img src="https://www.keit.re.kr/image/renewal/ico_site_banner_img01.png" alt="">
+                    </div>
+                    <div>
+                        <img src="https://www.keit.re.kr/image/renewal/ico_site_banner_img03.png" alt="">
+                    </div>
+                    <div>
+                        <img src="https://www.keit.re.kr/image/renewal/ico_site_banner_img04.png" alt="">
+                    </div>
+                    <div>
+                        <img src="https://www.keit.re.kr/image/renewal/ico_site_banner_img05.png" alt="">
+                    </div>
+                    <div>
+                        <img src="https://www.keit.re.kr/image/renewal/ico_site_banner_img06.png" alt="">
+                    </div>
+                    <div>
+                        <img src="https://www.keit.re.kr/image/renewal/ico_site_banner_img07.png" alt="">
+                    </div>
+                    <div>
+                        <img src="https://www.keit.re.kr/image/renewal/ico_site_banner_img13.png" alt="">
+                    </div>
+                    <div>
+                        <img src="https://www.keit.re.kr/image/renewal/ico_site_banner_img13.png" alt="">
+                    </div>
+                    <div>
+                        <img src="https://www.keit.re.kr/image/renewal/ico_site_banner_img13.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom-footer">
+        <div class="head con">
+            <ul class="row">
+                <li class="cell"><a href="#">개인정보처리방침</a></li>
+                <li class="cell"><a href="#">이메일무단수집거부</a></li>
+                <li class="cell"><a href="#">서비스이용약관</a></li>
+                <li class="cell"><a href="#">서비스이용약관</a></li>
+                <li class="cell"><a href="#">고객서비스현장</a></li>
+                <li class="cell"><a href="#">이용안내</a></li>
+                <li class="cell"><a href="#">사이트맵</a></li>
+                <li class="cell"><a href="#">뷰어다운로드</a></li>
+                <li class="cell"><a href="#">도로명 주소안내</a></li>
+                <li class="cell"><a href="#">찾아오시는 길</a></li>
+                <li class="cell"><a href="#">영상정보처리기기운영·관리방침</a></li>
+            </ul>
+            <div class="address-box row">
+                <div class="address-box-1">
+                    <span class="cell">대구<br>
+                        본원
+                    </span>
+                    <p class="cell">[우편번호:41069] 대구광역시 동구 첨단로 8<br>
+                        길 32(혁신동 1152번지)
+                    </p>
+                </div>
+                <div class="address-box-1">
+                    <span class="cell">대전<br>
+                        본원
+                    </span>
+                    <p class="cell">[우편번호:41069] 대구광역시 동구 첨단로 8<br>
+                        길 32(혁신동 1152번지)
+                    </p>
+                </div>
+                <div class="address-box-1">
+                    <span class="cell">서울<br>
+                        사무소
+                    </span>
+                    <p class="cell">[우편번호:41069] 대구광역시 동구 첨단로 8<br>
+                        길 32(혁신동 1152번지)
+                    </p>
+                </div>
+
+            </div>
+        </div>
+        <div class="body flex">
+            <div class="con flex flex-ai-c flex-jc-sb">
+                <div class="num row flex">
+                    <a href="#" class="">
+                        <img src="https://www.keit.re.kr/image/renewal/keit_footer.png" alt="">
+                    </a>
+                    <span class="">
+                        | 전화문의
+                    </span>
+                    <strong>1544-6633</strong>
+
+                </div>
+                <div class="site flex">
+                    <img src="https://www.keit.re.kr/image/renewal/ico_footer_mark_eprivacy.png" alt="">
+                    <img src="https://www.keit.re.kr/image/renewal/ico_footer_mark_eprivacy.png" alt="">
+                    <select name='fruits'>
+                        <option value=''>FAMILYSITE</option>
+                        <option value=''>산업기술R&D교육센터</option>
+                        <option value=''>산업기술R&D교육센터</option>
+                        <option value=''>실시간통합연구비관리(RCMS)</option>
+                        <option value=''>국가균형발전종합정보시스템(NABIS)</option>
+                        <i class="fas fa-caret-upb border-pink"></i>
+                    </select>
+                </div>
+            </div>
+
+
+
+        </div>
+        <div class="foot">
+            <div class="con flex flex-ai-c flex-jc-sb">
+                <span>
+                    Copyright (C). 2013 Korea Evaluation Institute Of Industrial Technology All Rights Reserved.
+                </span>
+                <ul class="flex">
+                    <li><a href="#">
+                            <img src="https://www.keit.re.kr/image/renewal/ico_sns_facebook2.png" alt="">
+                        </a></li>
+                    <li><a href="#">
+                            <img src="https://www.keit.re.kr/image/renewal/ico_sns_youtube2.png" alt="">
+                        </a></li>
+                    <li><a href="#">
+                            <img src="https://www.keit.re.kr/image/renewal/ico_sns_itech2.png" alt="">
+                        </a></li>
+                    <li><a href="#">
+                            <img src="https://www.keit.re.kr/image/renewal/ico_sns_blog2.png" alt="">
+                        </a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+
+</body>
+
+</html>
