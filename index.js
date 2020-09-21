@@ -137,24 +137,29 @@ $('.my-slider-1 > .owl-carousel').owlCarousel({
 });
 
 $('.slider-box-1 > .slider').slick({
-  arrows:true,
+  arrows:false,
   slidesToShow:7,
   autoplay:true,
-  prevArrow: '<i class="fas fa-arrow-left"></i>',
-  nextArrow: '<i class="fas fa-arrow-right"></i>',
   responsive: [ // 반응형 웹 구현 옵션
 					{  
-						breakpoint: 920, //화면 사이즈 920px
+						breakpoint: 920, 
 						settings: {
 							//위에 옵션이 디폴트 , 여기에 추가하면 그걸로 변경
-							slidesToShow:4 
+							slidesToShow:4
 						} 
 					},
 					{ 
-						breakpoint: 691, //화면 사이즈 691px
+						breakpoint: 691, 
 						settings: {	
 							//위에 옵션이 디폴트 , 여기에 추가하면 그걸로 변경
-							slidesToShow:3 
+							slidesToShow:3
+						} 
+					},
+{  
+						breakpoint: 350, 
+						settings: {
+							//위에 옵션이 디폴트 , 여기에 추가하면 그걸로 변경
+							slidesToShow:2
 						} 
 					}
 				]
